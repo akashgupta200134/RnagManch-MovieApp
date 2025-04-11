@@ -56,16 +56,16 @@ const Movie = () => {
 
 
     return (
-        <div className="w-screen h-screen  ">
-            <div className="w-full flex items-center justify-center   "> 
+        <div className="w-screen h-screen ">
+            <div className="w-full flex items-center justify-center   p-2  "> 
                 <i onClick={() => navigate(-1)} className="hover:text-[#6556CD] text-white text-2xl ml-4 mr-4 ri-arrow-left-line"></i>
                 <h1 className="text-2xl font-bold ml-3 text-white "> Movie
                 <span className=" ml-2 text-lg capitalize ">
                        ({category})
                     </span>
                 </h1>
-                <TopNav />
-                <div className=" flex flex-row gap-2 mr-5 ">
+                <TopNav/>
+                <div className=" flex flex-row gap-2 mr-5  ">
                 <Dropdown title="Filter" options={["popular" , "top_rated" , "upcoming" , "now_playing"]} func={(e) => { setcategory(e.target.value); }} />
               
 
@@ -81,7 +81,7 @@ const Movie = () => {
                     hasMore={hasMore}
                     loader={<Loader />}
                 >
-                    <Cards data={movie} title={category} />
+                    <Cards data={movie} title={category}  />
                 </InfiniteScroll>
             )}
         </div>

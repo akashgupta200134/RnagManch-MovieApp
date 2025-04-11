@@ -13,7 +13,7 @@ const Header = ({ data }) => {
           overflow : 'hidden'
         }}
 
-        className="flex flex-col justify-end p-[8%] mx-auto "
+        className="flex flex-col justify-end p-[8%] mx-auto mt-2"
       >
         <h1 className="text-5xl font-bold text-white">
           {data.title || data.orignal_title|| data.name || data.original_name}
