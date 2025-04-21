@@ -60,7 +60,7 @@ const People = () => {
                 >
                     <div>
 
-                    <Cards data={people} title={category} />
+                    <Cards data={people} title="people" />
                     </div>
                 </InfiniteScroll>
             )
