@@ -50,7 +50,7 @@ const TopNav = () => {
           {search.map((items, index) => (
             <Link
               key={index}
-              to={`/${items.media_type}/${items.id}`}
+              to={`/${items.media_type}/details/${items.id}`}
               className="hover:bg-zinc-600 hover:text-white duration-300 w-full font-semibold text-zinc-400 py-2 px-5 flex justify-start items-center border-b border-zinc-800"
             >
               {items.backdrop_path ||
